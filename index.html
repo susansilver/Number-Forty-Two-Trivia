@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Number Forty-Two Trivia Generator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://beautyofmathematics.com/wp-content/themes/Beauty-of-Mathematics-12923/dist/css/main.min.css">
+    <link rel="stylesheet" href="https://beautyofmathematics.com/wp-content/themes/Beauty-of-Mathematics-12923/style.css">
+  
+  <link rel="preload" href="fonts/Ouroboros-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+</head>
+
+<body>
+
+  <main id="primary" class="site-main">
+   <article>
+	<header class="entry-header">
+	<div class="wrapper primary">
+        <div class="meta">
+		  <h1>Number Forty-Two Trivia</h1>
+		
+			<div class="entry-meta update">
+			<p><iconify-icon icon="mdi:calendar-clock" width="24"></iconify-icon> Updated on Febuary 11th, 2023</p>
+			</div><!-- .entry-meta -->
+		
+		</div><!-- meta -->
+		</div><!-- wrapper -->
+	</header><!-- .entry-header -->
+
+    <div class="entry-content">
+	<div class="single background">
+
+
+  <div id="LTUAE" class="flex-center">42</div>
+
+  <div id="generator">
+    <span class="icon"><iconify-icon icon="mdi:folder-hash"></iconify-icon></span>
+    <div class="trivia">
+     <button id="new-fact" class="btn large-btn btn-grow">New Fact</button>
+     <div id="fact" class="flex-center"></div>
+     <button class="twitter btn large-btn float-right">Share Fact on Twitter </button> 
+    </div>
+  </div>
+
+  <div id="intro">
+    <div class="quote-background">
+    <div id="fish" class="inverse"><span class="book"></span></div>
+  </div>
+  </div>
+
+  <div id="novel">
+    <div class="quote-background">
+     <div id="penultimate" class="inverse"><span class="book"></span></div>
+    </div>
+  </div>
+
+  <div id="film">
+    <div class="quote-background">
+      <div id="fly" class="inverse"><span class="book"></span></div>
+    </div>
+
+  <div id="summary"></div>
+  </div>
+  </div>
+   </article>
+  </main>
+
+  <script>
+    cript>
+fetch("http://numbersapi.com/42")
+   .then(response => response.text())
+   .then((response) => {
+       document.getElementById('fact').innerHTML = response;
+   })
+   .catch(err => console.log(err))
+</script>
+  <script src="script.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.4/iconify-icon.min.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

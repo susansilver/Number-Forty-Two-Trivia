@@ -1,0 +1,83 @@
+:root {
+  --gradient: linear-gradient(90deg, #0288D1, #0D47A1, #E91E63,#F48FB1);
+}
+
+
+ @font-face {
+      font-family: 'Ouroboros';
+      src: url('/fonts/Ouroboros-Regular.woff') format('woff'),
+          url('/fonts/Ouroboros-Regular.woff2') format('woff2');
+      font-display: swap;
+    }
+ @font-face {
+      font-family: 'Playfair Display';
+      src: url('/fonts/playfair-display-v30-latin-regular.woff') format('woff'),
+          url('/fonts/playfair-display-v30-latin-regular.woff2') format('woff2');
+      font-display: swap;
+    }
+
+h1 {
+  font-family:'Playfair Display', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.flex-center {
+  display: flex;  font-size:3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.float-right {
+  float: right;
+}
+
+#LTUAE {
+  font-size: 8rem;
+  font-family: 'Ouroboros', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 .5em;
+  line-height: .8;
+  background: #ddd;
+    background-image: var(--gradient);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  animation: bg-animation 15s infinite;
+  transition: background-position 1s;
+}
+
+
+@keyframes bg-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}
+}
+
+#generator, #generator .trivia {
+  border: 0.25em solid #000;
+  padding:1em;
+}
+
+#generator .icon {
+  color: #0288d1;
+  font-size: 2.5em;
+  position: relative;
+  top:0;
+  left:0;
+}
+
+#generator .btn-grow{
+  transition: all 0.3s ease-in-out;
+}
+
+#generator .btn-grow:hover{
+  transform: scale(1.1);
+}
+
+#generator .trivia {
+  padding:2.5em;
+}
+
+#generator .fact {
+    font-size:3rem;
+}
